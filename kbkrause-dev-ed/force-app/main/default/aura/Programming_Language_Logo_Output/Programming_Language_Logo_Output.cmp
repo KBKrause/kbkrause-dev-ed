@@ -1,0 +1,8 @@
+<aura:component implements="force:hasRecordId,flexipage:availableForAllPageTypes">
+    <aura:attribute name="recordId" type="String" />
+    <lightning:card>
+        <lightning:recordViewForm recordId="{!v.recordId}" objectApiName="Programmatic_Language__c">
+            <lightning:outputField fieldName="Logo__c" />
+        </lightning:recordViewForm>
+    </lightning:card>
+</aura:component>

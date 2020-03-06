@@ -1,0 +1,18 @@
+<aura:component implements="force:hasRecordId,flexipage:availableForAllPageTypes" 
+                controller="ProgrammingLanguageTech_Controller">
+    
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+	<aura:attribute name="recordId" type="String" />
+    <aura:attribute name="languages" type="Projects_to_Languages__c[]" />
+    <aura:attribute name="technologies" type="Projects_to_Frameworks__c[]" />
+    
+    <aura:iteration items="{!v.languages}" var="language">
+        {!language.Programmatic_Language__r.Name}
+        <br />
+    </aura:iteration>
+    <aura:iteration items="{!v.technologies}" var="technology">
+        {!technology.Technology__r.Name}
+        <br />
+    </aura:iteration>
+    
+</aura:component>
