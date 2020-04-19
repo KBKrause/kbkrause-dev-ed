@@ -2,7 +2,14 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>ProgrammingLanguageTech_Controller</members>
+        <members>HoldingTriggerHandler</members>
+        <members>HoldingHistoryTriggerHandler</members>
         <name>ApexClass</name>
+    </types>
+    <types>
+        <members>HoldingTrigger</members>
+        <members>HoldingHistoryTrigger</members>
+        <name>ApexTrigger</name>
     </types>
     <types>
         <members>Programming_Languages_Technologies_List</members>
